@@ -22,7 +22,7 @@ namespace P2app.Controllers
 
         public IActionResult Greeting()
         {
-            return View("Welcome everyone");
+            return Content("Welcome everyone");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
