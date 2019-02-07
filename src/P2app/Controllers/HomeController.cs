@@ -20,6 +20,11 @@ namespace P2app.Controllers
             return View();
         }
 
+        public IActionResult Greeting()
+        {
+            return View("Welcome everyone");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
